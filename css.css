@@ -1,0 +1,55 @@
+/* ---------------- Produktsidan - herr ---------------- */
+h1 {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.herrbild {
+    text-align: center;
+    background-color: #F1F1F1;
+    margin: 30px;
+    padding: 20px;
+}
+
+@media only screen and (max-width: 764px) {
+    .herrbild {
+        max-width: 100%;
+    }
+    img {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .herrbild {
+        max-width: 100%;
+    }
+    img {
+        width: 100%;
+    }
+}
+
+.cards-list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 60%;
+    margin: auto;
+    padding: 10px;
+}
+
+.card {
+    margin: auto;
+}
+
+.btn {
+    background-color: black;
+    color: white;
+    font-size: 15px;
+}
+
+.btn:hover {
+    border: 1px solid black;
+    color: black;
+    background-color: white;
+    transition: 0.4s;
+}
