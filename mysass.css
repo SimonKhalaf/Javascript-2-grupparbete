@@ -14,55 +14,57 @@ ul li {
 
 .search {
   border: 1px solid black;
-  height: 32px;
-  border-radius: 16px;
+
+  border-radius: 8px;
   background: white;
-  max-width: 400px;
+  max-width: 300px;
+  max-height: fit-content;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   position: relative;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .search input {
   -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   border: none;
-  padding: 0 50px 0 16px;
+  padding: 0 30px 0 10px;
   margin: 0;
   background: none;
   outline: none;
   -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  -ms-flex: 1;
+  flex: 1;
 }
 
 .search button {
   -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   border: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   background: none;
   padding: 0;
   margin: 0;
   position: absolute;
   top: 0;
   right: 20px;
-  height: 30px;
+  height: 25px;
 }
-
+.kassa {
+  display: flex;
+}
 .cart {
-  padding-left: 20px;
-  padding-right: 20px;
+  padding: 0.5em;
 }
 
 /* ---------------- Produktsidan - herr ---------------- */
@@ -73,7 +75,7 @@ h1 {
 
 .herrbild {
   text-align: center;
-  background-color: #F1F1F1;
+  background-color: #f1f1f1;
   margin: 30px;
   padding: 20px;
 }
@@ -110,7 +112,7 @@ h1 {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   width: 60%;
   margin: auto;
   padding: 10px;
@@ -132,5 +134,110 @@ h1 {
   background-color: white;
   -webkit-transition: 0.4s;
   transition: 0.4s;
+}
+.main {
+  max-width: 40.5rem;
+  max-height: fit-content;
+  margin: auto;
+  padding: 2rem 1.25rem;
+}
+.title h3 {
+  font-size: medium;
+  padding: 10px 10px;
+  text-align: center;
+  font-weight: bold;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5 {
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+.img,
+.blog-img,
+.user-img {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.ftco-footer-social {
+  li {
+    list-style: none;
+    margin: 0 10px 0 0;
+    display: inline-block;
+    a {
+      height: 40px;
+      width: 40px;
+      display: block;
+      background: rgba($black, 0.05);
+      border-radius: 50%;
+      position: relative;
+      span {
+        position: absolute;
+        font-size: 20px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      &:hover {
+        color: $white;
+      }
+    }
+  }
+}
+
+.ftco-section {
+  padding: 12em 0;
+  h2 {
+    margin-bottom: 0;
+  }
+}
+
+footer {
+  padding: 7em 0;
+}
+
+.footer {
+  background: #3f696d;
+
+  p {
+    color: rgba(255, 255, 255, 0.3);
+  }
+  .footer-heading {
+    font-size: 30px;
+    color: $white;
+    font-weight: 700;
+    margin-bottom: 30px;
+    .logo {
+      color: white;
+    }
+  }
+  .menu {
+    margin-bottom: 30px;
+    a {
+      color: rgba(255, 255, 255, 0.6);
+      margin: 0 10px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+  }
+  .ftco-footer-social {
+    li {
+      a {
+        background: transparent;
+        border: 1px solid primary;
+      }
+    }
+  }
 }
 /*# sourceMappingURL=mysass.css.map */

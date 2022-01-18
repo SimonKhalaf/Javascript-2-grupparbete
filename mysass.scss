@@ -1,127 +1,121 @@
-body{
-    font-family: Helvetica;
+body {
+  font-family: Helvetica;
 }
 
 ul {
-    li {
-        padding-left:20px;
-        padding-right:20px;
-    }
+  li {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
 
 .d-flex {
-    padding-left:30px;
-    padding-right:30px;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 .search {
-    border: 1px solid black;
-    height: 32px;
-    border-radius: 16px;
-    background: white;
-    max-width: 400px;
+  border: 1px solid black;
+  height: 32px;
+  border-radius: 16px;
+  background: white;
+  max-width: 400px;
+  display: flex;
+  position: relative;
+  box-sizing: border-box;
+
+  input {
+    appearance: none;
+    border: none;
+    padding: 0 50px 0 16px;
+    margin: 0;
+    background: none;
+    outline: none;
+    flex: 1;
+  }
+
+  button {
+    appearance: none;
+    border: none;
     display: flex;
-    position: relative;
-    box-sizing: border-box;
-
-    input{
-        appearance: none;
-        border: none;
-        padding: 0 50px 0 16px;
-        margin: 0;
-        background: none;
-        outline: none;
-        flex: 1;
-    }
-
-    button{
-        appearance: none;
-        border: none;
-        display: flex;
-        align-items: center;
-        background: none;
-        padding: 0;
-        margin: 0;
-        position: absolute;
-        top: 0;
-        right: 20px;
-        height: 30px;
-    }
+    align-items: center;
+    background: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    right: 20px;
+    height: 30px;
+  }
 }
 
-.cart{
-    padding-left:20px;
-    padding-right:20px;
+.cart {
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 /* ---------------- Produktsidan - herr ---------------- */
 
 h1 {
-    text-align: center;
-    padding-bottom: 20px;
+  text-align: center;
+  padding-bottom: 20px;
 }
 
 .herrbild {
-    text-align: center;
-    background-color: #F1F1F1;
-    margin: 30px;
-    padding: 20px;
+  text-align: center;
+  background-color: #f1f1f1;
+  margin: 30px;
+  padding: 20px;
 }
 
-
 @media only screen and (max-width: 764px) {
-    .herrbild {
-        max-width: 100%;
-    }
-    img {
-        width: 100%;
-    }
+  .herrbild {
+    max-width: 100%;
+  }
+  img {
+    width: 100%;
+  }
 }
 
-
 @media only screen and (max-width: 764px) {
-    .herrbild {
-        max-width: 100%;
-    }
-    img {
-        width: 100%;
-    }
+  .herrbild {
+    max-width: 100%;
+  }
+  img {
+    width: 100%;
+  }
 }
 
 @media only screen and (max-width: 1200px) {
-    .herrbild {
-        max-width: 100%;
-    }
-    img {
-        width: 100%;
-    }
+  .herrbild {
+    max-width: 100%;
+  }
+  img {
+    width: 100%;
+  }
 }
-
 
 .cards-list {
-    display: flex;
-    flex-wrap: wrap;
-    width: 60%;
-    margin: auto;
-    padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 60%;
+  margin: auto;
+  padding: 10px;
 }
-
 
 .card {
-    margin: auto;
+  margin: auto;
 }
-
 
 .btn {
-    background-color: black;
-    color: white;
-    font-size: 15px;
+  background-color: black;
+  color: white;
+  font-size: 15px;
 }
 
-
 .btn:hover {
-    border: 1px solid black;
-    color: black;
-    background-color: white;
-    transition: 0.4s;
+  border: 1px solid black;
+  color: black;
+  background-color: white;
+  transition: 0.4s;
 }
