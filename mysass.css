@@ -184,6 +184,13 @@ h5,
   margin-bottom: 10px;
 }
 
+.containerRelaterade {
+  max-width: 2000px;
+  justify-content: center;
+  display: grid;
+
+}
+
 .productPicBig {
   width: 400px;
   height: 400px;
@@ -449,3 +456,27 @@ h5,
   font-size: 10px;
   font-weight: 100;
 }
+/* --------------- KONTAKTA OSS --------------*/
+
+.contact {
+  justify-content: center;
+  display: grid;
+ 
+ }
+ 
+ .form-control {
+   max-width: 450px;
+   max-height: 450px;   
+ }
+ /* @media only screen and (max-width: 764px) {
+  .form-control{
+    max-width: 100px;
+  }
+} */
+ .contactText {
+   justify-content: center;
+   
+ }
+ .textarea {
+   max-width: 100px;
+ }
