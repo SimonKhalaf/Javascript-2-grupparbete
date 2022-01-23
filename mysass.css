@@ -1,5 +1,5 @@
 body {
-  font-family: Helvetica;
+  font-family: "Roboto Slab", serif;
 }
 
 ul li {
@@ -135,12 +135,7 @@ h1 {
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
-.main {
-  max-width: 40.5rem;
-  max-height: fit-content;
-  margin: auto;
-  padding: 2rem 1.25rem;
-}
+
 .title h3 {
   font-size: medium;
   padding: 10px 10px;
@@ -170,82 +165,11 @@ h5,
   background-position: center center;
 }
 
-.ftco-footer-social {
-  li {
-    list-style: none;
-    margin: 0 10px 0 0;
-    display: inline-block;
-    a {
-      height: 40px;
-      width: 40px;
-      display: block;
-      background: rgba($black, 0.05);
-      border-radius: 50%;
-      position: relative;
-      span {
-        position: absolute;
-        font-size: 20px;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-      }
-      &:hover {
-        color: $white;
-      }
-    }
-  }
-}
-
-.ftco-section {
-  padding: 12em 0;
-  h2 {
-    margin-bottom: 0;
-  }
-}
-
-footer {
-  padding: 7em 0;
-}
-
-.footer {
-  background: #3f696d;
-
-  p {
-    color: rgba(255, 255, 255, 0.3);
-  }
-  .footer-heading {
-    font-size: 30px;
-    color: $white;
-    font-weight: 700;
-    margin-bottom: 30px;
-    .logo {
-      color: white;
-    }
-  }
-  .menu {
-    margin-bottom: 30px;
-    a {
-      color: rgba(255, 255, 255, 0.6);
-      margin: 0 10px;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-    }
-  }
-  .ftco-footer-social {
-    li {
-      a {
-        background: transparent;
-        border: 1px solid primary;
-      }
-    }
-  }
-}
 /*# sourceMappingURL=mysass.css.map */
 
 /* ----------------- Produktsida --------------*/
 
 .product1 {
-  
 }
 .productName {
   font-weight: 500;
@@ -253,7 +177,6 @@ footer {
 
 .productInfo {
   font-size: small;
-  
 }
 
 .productPrice {
@@ -261,7 +184,7 @@ footer {
 }
 
 .productText {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   border-top: 1px solid black;
   max-width: 3000px;
   margin-bottom: 10px;
@@ -272,15 +195,13 @@ footer {
   height: 400px;
   display: flex-end;
   float: right;
-
 }
 .productPicSmall {
   width: 400px;
   height: 400px;
 }
-.productPageBig{
+.productPageBig {
   max-width: 80%;
-  
 }
 
 .produtPageSmall {
@@ -288,29 +209,27 @@ footer {
 }
 
 @media only screen and (min-width: 1280px) {
-.containerProd {
-  border: black solid 1px;
-  margin-left: 180px;
-  margin-right: 180px;
-}
+  .containerProd {
+    border: black solid 1px;
+    margin-left: 180px;
+    margin-right: 180px;
+  }
 }
 @media only screen and (max-width: 1279px) {
   .containerProd {
     border: rgb(100, 100, 100) solid 1px;
   }
-  }
+}
 
 .select {
   display: block;
   pad: 10px;
   margin-top: 20px;
-  
 }
-
 
 /* --------------------VARUKORGEN & KNAPPARNA-------------------- */
 /* Siffran på antalet produkter i varukorgen */
-  .items-in-basket{
+.items-in-basket {
   position: absolute;
   margin-left: 10px;
   margin-top: 12px;
@@ -321,27 +240,27 @@ footer {
   border-radius: 5px;
   color: white;
   background-color: black;
-  }
+}
 
-  .fa-shopping-cart {
-    color: black;
-  }
+.fa-shopping-cart {
+  color: black;
+}
 
-  #checkout img {
+#checkout img {
   height: 120px;
   display: block;
   padding: 10px;
-  }
+}
 
-  #checkout tr td {
+#checkout tr td {
   height: 80px;
   width: 25%;
   border-bottom: 2px solid lightgray;
   margin-left: 5px;
-  }
+}
 
 /* Popup-meddelande att en produkt har dykt upp */
-  #notify {
+#notify {
   position: fixed;
   background-color: black;
   color: white;
@@ -352,15 +271,15 @@ footer {
   visibility: hidden;
   opacity: 0;
   transition: opacity 1000ms, visibility 1000ms;
-  }
+}
 
-  .visible {
+.visible {
   visibility: visible !important;
   opacity: 1 !important;
-  }
+}
 
 /* Betala eller släng knapparna i kassan */
-  .checkout-buttons {
+.checkout-buttons {
   background-color: darkgrey;
   color: white;
   border: none;
@@ -371,77 +290,167 @@ footer {
   float: right;
   margin-right: 10px;
   margin-top: 10px;
-  }
+}
 
-  .checkout-buttons:hover {
-    color: white;
-    background-color: black;
-    -webkit-transition: 0.4s;
-    transition: 0.4s;
-    }
+.checkout-buttons:hover {
+  color: white;
+  background-color: black;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
 
-  /* --------------------VARUKORG - UNDERRUBRIKERNA---------------- */
-  .container-products {
+/* --------------------VARUKORG - UNDERRUBRIKERNA---------------- */
+.container-products {
   max-width: 50%;
   margin: auto;
-  }
+}
 
-  .products {
+.products {
   margin: auto;
   width: 50%;
-  }
+}
 
-  .product-header1 {
+.product-header1 {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
   border-bottom: 4px solid lightgray;
   margin: auto;
-  }
+}
 
-  .produktnamn {
+.produktnamn {
   width: 20%;
-  }
+}
 
-  .produktnummer {
+.produktnummer {
   width: 20%;
-  }
-  
-  .produktnamn1 {
+}
+
+.produktnamn1 {
   margin-left: 5%;
-  }
+}
 
-  .total {
+.total {
   margin-left: 6%;
-  }
+}
 
-  .pris {
+.pris {
   margin-left: 17%;
-  }
+}
 
-  @media only screen and (max-width: 764px) {
-    .container-products, .products, .product-header1 {
+@media only screen and (max-width: 764px) {
+  .container-products,
+  .products,
+  .product-header1 {
     max-width: 100%;
-   }
-   h5 {
-     font-size: 12px;
-   }
   }
-   
-    @media only screen and (max-width: 764px) {
-    .container-products, .products, .product-header1 {
-    max-width: 100%;
-   }
-   h5 {
+  h5 {
     font-size: 12px;
   }
+}
+
+@media only screen and (max-width: 764px) {
+  .container-products,
+  .products,
+  .product-header1 {
+    max-width: 100%;
   }
-   
-    @media only screen and (max-width: 1200px) {
-    .container-products, .products, .product-header1 {
+  h5 {
+    font-size: 12px;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .container-products,
+  .products,
+  .product-header1 {
     width: 100%;
-   }
-   h5 {
+  }
+  h5 {
     font-size: 12px;
   }
+}
+
+.title {
+  text-align: center;
+  background-color: #fdfdfd;
+  margin-bottom: 30px;
+}
+
+@media only screen and (max-width: 764px) {
+  .title {
+    max-width: 100%;
   }
+  img {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 764px) {
+  .title {
+    max-width: 100%;
+  }
+  img {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .title {
+    max-width: 100%;
+  }
+  img {
+    width: 100%;
+  }
+}
+.main {
+  margin-bottom: 50px;
+}
+/* Footer */
+.container {
+  font-family: "Roboto Slab", serif;
+  background-color: black;
+}
+.social-links a {
+  display: inline-block;
+  font-size: 4rem;
+  color: white;
+  margin-left: 20px;
+}
+.footer-heading {
+  margin-top: 40px;
+}
+.row ul a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+.about h4 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  font-weight: 700;
+  text-align: start;
+}
+.about ul li {
+  margin-bottom: 5px;
+  text-align: start;
+}
+.about ul li a {
+  display: block;
+  transition: all 0.3s ease;
+}
+.about ul li a:hover {
+  color: white;
+  font-weight: 700;
+  padding-left: 10px;
+}
+.fmid h2 a {
+  text-decoration: none;
+  color: white;
+  font-size: 50px;
+  font-family: "Roboto Slab", serif;
+}
+.fmid p {
+  font-size: 10px;
+  font-weight: 100;
+}
