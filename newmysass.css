@@ -220,9 +220,7 @@ footer {
 }
 /*# sourceMappingURL=mysass.css.map */
 /* ----------------- Produktsida --------------*/
-.product1 {
-  
-}
+
 .productName {
   font-weight: 500;
 }
@@ -258,7 +256,7 @@ footer {
 }
 @media only screen and (min-width: 1280px) {
 .containerProd {
-  border: black solid 1px;
+  border: rgb(163, 163, 163) solid 1px;
   margin-left: 180px;
   margin-right: 180px;
 }
@@ -413,3 +411,33 @@ footer {
     font-size: 12px;
   }
   }
+  /* -------- MIKAEL NY KOD NEDAN ------- */
+  .contact {
+    justify-content: center;
+    display: grid;
+   
+   }
+   .form-control {
+    max-width: 450px;
+    max-height: 450px;   
+  }
+  /* @media only screen and (max-width: 764px) {
+   .form-control{
+     max-width: 100px;
+   }
+ } */
+  .contactText {
+    justify-content: center;
+    
+  }
+  .textarea {
+    max-width: 100px;
+  }
+
+.containerRelaterade {
+  max-width: 2000px;
+  justify-content: center;
+  display: grid;
+
+}
+/* ------ MIKAEL NY KOD OVAN ------- */
