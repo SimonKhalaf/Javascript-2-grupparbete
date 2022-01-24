@@ -345,8 +345,8 @@ function checkoutBasket() {
             alert("Din order är mottagen! " + itemCount + " stycken varor - Totalsumma: " + totalSum + ":-");
         }
 
-        // Tom varukorgen
-        emptyBasket(false);
+        // // Tom varukorgen
+        // emptyBasket(false);
 
     } else {
         alert("Inga varor i din varukorg!");

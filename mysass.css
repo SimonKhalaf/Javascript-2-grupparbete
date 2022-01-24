@@ -148,4 +148,12 @@ h1 {
 .betalning_container {
   padding: 25px;
 }
+
+.tack_container {
+  text-align: center;
+  border-radius: 10px;
+  padding: 25px;
+  margin: 100px;
+  background-color: rgba(255, 255, 255, 0.356);
+}
 /*# sourceMappingURL=mysass.css.map */
