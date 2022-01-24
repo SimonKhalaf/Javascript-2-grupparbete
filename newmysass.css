@@ -60,7 +60,9 @@ ul li {
 .cart {
   padding: 0.5em;
 }
-/* ---------------- Produktsidan - herr ---------------- */
+
+
+/* ---------------- Produktsidan - herr & dam ---------------- */
 h1 {
   text-align: center;
   padding-bottom: 20px;
@@ -219,8 +221,10 @@ footer {
   }
 }
 /*# sourceMappingURL=mysass.css.map */
-/* ----------------- Produktsida --------------*/
 
+
+
+/* ----------------- Produktsida --------------*/
 .productName {
   font-weight: 500;
 }
@@ -411,6 +415,8 @@ footer {
     font-size: 12px;
   }
   }
+
+
   /* -------- MIKAEL NY KOD NEDAN ------- */
   .contact {
     justify-content: center;
@@ -441,3 +447,27 @@ footer {
 
 }
 /* ------ MIKAEL NY KOD OVAN ------- */
+
+
+/* ------ Tack och betalningssidan ------ */
+.text{
+  display: inline-block;
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid black;
+  box-sizing: border-box;
+  background: white;
+}
+
+.betalning_container {
+  padding: 25px;
+}
+
+.tack_container {
+  text-align: center;
+  border-radius: 10px;
+  padding: 25px;
+  margin: 100px;
+  background-color: rgba(255, 255, 255, 0.356);
+}
