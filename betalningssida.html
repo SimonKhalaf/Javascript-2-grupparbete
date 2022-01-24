@@ -43,26 +43,48 @@
     <div class="container">
         <div class="row">
             <div class="col-7">
-                <form method="post">
-                    <div class="mb-3">
-                        <input type="text" class="form-control" name="name" placeholder="">
+                <div class="betalning_container uppgift">
+                    <h5>Dina uppgifter</h5>
+                    <div class="row">
+                        <div class="col">
+                            <label for="e-post">E-post</label><br>
+                            <input type="text" class="text" id="e-post" placeholder="E-post">
+                        </div>
+                        <div class="col">
+                            <label for="postnummer">Postnummer</label><br>
+                            <input type="text" class="text" id="postnummer" placeholder="123"><br>
+                        </div>
                     </div>
-                    <div class="mb-3">
-                        <input type="text" class="form-control" name="email" placeholder="">
+                </div>
+                <div class="betalning_container betalsningsinfo">
+                    <h5>Betalsningsinformation</h5>
+                    <div class="row">
+                        <div>
+                            <label for="kortNamn">Kortinnehavarens namn</label><br>
+                            <input type="text" class="text" id="kortNamn" placeholder=""><br>
+                        </div>
+                        <div>
+                            <label for="kortNummer">Kortnummer</label><br>
+                            <input type="password" class="text" id="kortNummer" placeholder=""><br>
+                        </div>
+                        <div class="col">
+                            <label for="utgångsdatum">Utgångsdatum</label><br>
+                            <input type="text" class="text" id="utgångsdatum" placeholder="MM/YY">
+                        </div>
+                        <div class="col">
+                            <label for="cvc_cvv">CVC / CVV</label><br>
+                            <input type="text" class="text" id="cvc_cvv" placeholder="123"><br>
+                        </div>
                     </div>
-                    <div class="mb-3">
-                        <input type="text" class="form-control" name="subject" placeholder="">
-                    </div>
-                    <div class="mb-4">
-                        <textarea class="form-control" name="message" rows="5" placeholder=""></textarea>
-                    </div>
-                    <div class="d-grid">
-                        <button class="checkout-buttons" onclick="checkoutBasket()">Bästall nu</button>
-                    </div>
-                </form>
+                </div>
+                <div class="betalning_container d-grid">
+                    <button class="checkout-buttons" onclick="checkoutBasket()">Bästall nu</button>
+                </div>
+                
             </div>
+
             <div class="col-1"></div>
-            <div class="col-4">
+            <div class="betalning_container col-4">
                 Varkorg
                 <table id="checkout"></table>
             </div>
