@@ -1,0 +1,53 @@
+
+
+ [
+    {
+    "image": "https://ean-images.booztcdn.com/sail-racing/183x239/g/srg1911520_cwhite.jpg",
+    "img-alt":"Card image cap",
+    "name": "Sail Racing",
+    "text":"Vit Sail Racing huvtröja med dragkedja",
+    "price": "750kr",
+    "mer-link":"produkt1.html"
+},
+{
+    "image": "https://ean-images.booztcdn.com/boss-green/400x523/g/bog50456422_cblack_v001.jpg",
+    "img-alt":"Card image cap",
+    "name": "Hugo Boss",
+    "text":"Svart Hugo Boss sweatshirt med loga",
+    "price": "1200kr",
+    "mer-link":"produkt1.html"
+},
+{
+    "image": "https://ean-images.booztcdn.com/gant-clothing/400x523/g/gcl2047017_cblack_v5.jpg",
+    "img-alt":"Card image cap",
+    "name": "GANT",
+    "text":"Svart GANT huvtröja med en liten loga",
+    "price": "550kr",
+    "mer-link":"produkt1.html"
+},
+{
+    "image": "https://ean-images.booztcdn.com/boss-black/400x523/g/bob50325887_copenmiscellaneous_v984.jpg",
+    "img-alt":"Card image cap",
+    "name": "BOSS 3-pack T-shirts",
+    "text":"Tre bekväma BOSS T-shirts i färgerna svart, vit och marinblå",
+    "price": "400kr",
+    "mer-link":"produkt1.html"
+},
+{
+    "image": "https://ean-images.booztcdn.com/polo-ralph-lauren/400x523/g/raf710810936_cpoloblack_v10490382wbo.jpg",
+    "img-alt":"Card image cap",
+    "name": "Polo Ralph Lauren jacka",
+    "text":"Svart vinterjacka från Polo Ralph Lauren med röd loga",
+    "price": "2200kr",
+    "mer-link":"produkt1.html"
+},
+{
+    "image": "https://ean-images.booztcdn.com/polo-ralph-lauren/400x523/g/raf710796555_cbsrwhite_v10001002wq0.jpg",
+    "img-alt":"Card image cap",
+    "name": "Polo Ralph Lauren",
+    "text":"Vit Polo Ralph Lauren skjorta i slim fit",
+    "price": "775kr",
+    "mer-link":"produkt1.html"
+}
+
+]

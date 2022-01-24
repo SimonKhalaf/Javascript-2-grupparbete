@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" rel="stylesheet"></script>
+  <link rel="stylesheet" href="mysass.css">
+  <script src="js.js"></script>
+  <script>
+      fetch("data.json")
+  </script>
+    <title>Produktsida</title>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Webshop.se
+                <!-- <img src="" alt=""> -->
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#expandlinks">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="expandlinks">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Hem</a></li>
+                    <li class="nav-item"><a class="nav-link" href="dam.html">Dam</a></li>
+                    <li class="nav-item"><a class="nav-link" href="herr.html">Herr</a></li>
+                </ul>
+                <form class="search">
+                    <input class="form-control ms-2" type="text" placeholder="Sök">
+                    <button class="serch_button" type="button"><img src="search.svg" alt="search"></button>
+                </form>
+            </div>
+            <div>
+                <a class="cart" href="kassa.html"><img src="shopping-cart.png" alt="shopping-cart" width="auto" height="24"></a>
+            </div>
+            
+        </div>
+    </nav>
+    <section>
+<h1 class="pt-5">Sail Racing</h1>    </section>
+
+    <!-- Produktsida -->
+    <section class="p-5 ProductPage">
+        <div class="containerProd">
+         <div class="row align-items-center justify-content-between">
+            <div class="col-md-6">
+                <img class = "img-fluid productPicBig d-none d-md-block" src="https://www.johnells.se/pub_images/original/1726_1911520_101_a.jpg?extend=white&width=2160&method=resize&height=2160&type=webp" alt="">
+                <img class = "img-fluid productPicSmall d-md-none" src="https://www.johnells.se/pub_images/original/1726_1911520_101_a.jpg?extend=white&width=2160&method=resize&height=2160&type=webp" alt="">
+            </div>
+            <div class="col-md p-5 productPageBig d-none d-md-block">
+                <h2 class="productName">Sail Racing</h2>
+                <h3 class="productInfo text-muted">SAIL RACING HOODIE - VIT</h3>
+                <h3 class="productPrice">700 kr</h3>
+                <select class="select !important">
+                    <option>XS</option>
+                    <option>S</option>
+                    <option>M</option>
+                    <option>L</option>
+                    <option>XL</option>
+                </select>
+                <a href="" class="btn btn-dark mt-3 mb-3 rounded-0">Lägg i varukorg</a>
+                <p class="productText">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit velit alias, quis molestiae itaque, aspernatur neque assumenda exercitationem natus cupiditate laboriosam ipsum voluptas molestias repellendus officia amet sapiente, obcaecati iste.</p>
+               
+            </div>
+            <div class="col-md p-5 productPageSmall d-md-none">
+                <h2 class="productName">Sail Racing</h2>
+                <h3 class="productInfo text-muted">SAIL RACING HOODIE - VIT</h3>
+                <h3 class="productPrice">700 kr</h3>
+                <select class="select !important">
+                    <option>XS</option>
+                    <option>S</option>
+                    <option>M</option>
+                    <option>L</option>
+                    <option>XL</option>
+                </select>
+                <a href="" class="btn btn-dark mt-3 mb-3 rounded-0">Lägg i varukorg</a>
+                <p class="productText">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit velit alias, quis molestiae itaque, aspernatur neque assumenda exercitationem natus cupiditate laboriosam ipsum voluptas molestias repellendus officia amet sapiente, obcaecati iste.</p>
+               
+            </div>
+        </div>
+
+    </section>
+        <section>
+        <!-- Relaterade produkter -->
+         <div class="containerRelaterade">
+             <h1>Relaterade Produkter</h1>
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="https://ean-images.booztcdn.com/sail-racing/183x239/g/srg1911520_cwhite.jpg" alt="Card image cap">
+                        <div class="card-body">
+                          <h5 class="card-title">Sail Racing</h5>
+                          <p class="card-text">Vit Sail Racing huvtröja med dragkedja</p>
+                          <p class="card-text">750kr</p>
+                          <a href="produkt1.html" class="btn">Läs mer om produkten</a>
+                        </div>
+                      </div>
+                    </div>
+                <div class="col">
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="https://ean-images.booztcdn.com/boss-green/400x523/g/bog50456422_cblack_v001.jpg" alt="Card image cap">
+                        <div class="card-body">
+                          <h5 class="card-title">Hugo Boss</h5>
+                          <p class="card-text">Svart Hugo Boss sweatshirt med loga</p>
+                          <p class="card-text">1200kr</p>
+                          <a href="produkt1.html" class="btn">Läs mer om produkten</a>
+                        </div>
+                      </div>
+                </div>
+                <div class="col">
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="https://ean-images.booztcdn.com/gant-clothing/400x523/g/gcl2047017_cblack_v5.jpg" alt="Card image cap">
+                        <div class="card-body">
+                          <h5 class="card-title">GANT</h5>
+                          <p class="card-text">Svart GANT huvtröja med en liten loga</p>
+                          <p class="card-text">550kr</p>
+                          <a href="produkt1.html" class="btn">Läs mer om produkten</a>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+       </div>
+       <section>
+        <div class="contactText text-center">
+            <h5 class="fw-bold mb-0 pt-5">Ring oss</h5>
+            <h5>033-14 00 00 (Lokalsamtalstaxa)</h5>
+            <br>
+            <h5 class="fw-bold mb-0">KONTAKTA OSS VIA SOCIALA MEDIER</h5>
+            <h5 class="pb-5">Facebook <br> Twitter <br> Instagram</h5>
+            </div>
+       </section>
+    </section>
+    <!-- Footer saknas här -->
+    <section>
+
+    </section>
+</body>
+</html>
