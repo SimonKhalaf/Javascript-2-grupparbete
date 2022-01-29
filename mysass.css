@@ -17,7 +17,7 @@ ul li {
   max-height: fit-content;
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex;
+  flex-wrap: wrap;
   position: relative;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
