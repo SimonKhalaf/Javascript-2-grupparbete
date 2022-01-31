@@ -339,14 +339,38 @@ function checkoutBasket() {
             }
         }
 
-        if (itemCount == 1) {
-            alert("Din order är mottagen! En vara - Totalsumma: " + totalSum + ":-");
-        } else {
-            alert("Din order är mottagen! " + itemCount + " stycken varor - Totalsumma: " + totalSum + ":-");
+        //------ Natsuki kod -------
+        //Hämta värden från input
+        var email = document.getElementById("e-post").value;
+        var mobil = document.getElementById("mobil").value;
+        var namn = document.getElementById("namn").value;
+        var efternamn = document.getElementById("efternamn").value;
+        var address = document.getElementById("address").value;
+        var postnummer = document.getElementById("postnummer").value;
+        var stad = document.getElementById("stad").value;
+        var kortNamn = document.getElementById("kortNamn").value;
+        var kortNummer = document.getElementById("kortNummer").value;
+        var expirationDate = document.getElementById("expirationDate").value;
+        var cvcCvv = document.getElementById("cvc_cvv").value;
+        
+        if (email === "" || mobil === "" || namn === "" || efternamn === "" || address === "" || postnummer === "" || 
+        stad === "" || kortNamn === "" || kortNummer === "" || expirationDate === "" || cvcCvv === "") {
+        alert("Du måste fylla i alla uppgifter")
+        return false;
         }
 
-        // // Tom varukorgen
-        // emptyBasket(false);
+        // ------ Natsuki kod ovan -------
+
+        if (itemCount == 1) {
+            alert("Din order är mottagen! En vara - Totalsumma: " + totalSum + ":-")
+            location.href='tack.html';
+        } else {
+            alert("Din order är mottagen! " + itemCount + " stycken varor - Totalsumma: " + totalSum + ":-")
+            location.href='tack.html';
+        }
+
+        // Tom varukorgen
+        emptyBasket(false);
 
     } else {
         alert("Inga varor i din varukorg!");

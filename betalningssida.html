@@ -10,7 +10,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="mysass.css">
     <title>Betalning</title>
+
+    
 </head>
+
 <body>
 
     <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
@@ -40,60 +43,106 @@
     </nav>
     
     <h1>Betalning</h1>
-    <div class="container">
-        <div class="row">
-            <div class="col-7">
-                <div class="betalning_container uppgift">
-                    <h5>Dina uppgifter</h5>
-                    <div class="row">
-                        <div class="col">
-                            <label for="e-post">E-post</label><br>
-                            <input type="text" class="text" id="e-post" placeholder="E-post">
-                        </div>
-                        <div class="col">
-                            <label for="postnummer">Postnummer</label><br>
-                            <input type="text" class="text" id="postnummer" placeholder="123"><br>
-                        </div>
+    <div class="row">
+        <div class="col-1"></div>
+        <div class="col-6">
+            <form>
+                <h5>Dina uppgifter</h5>
+                <div class="row" style="line-height:1.5;">
+                    <div class="col">
+                        <label for="e-post">E-post*</label><br>
+                        <input type="email" class="text" id="e-post" placeholder="E-post" required>
+                    </div>
+                    <div class=col>
+                        <label for="mobil">Mobil*</label><br>
+                        <input type="tel" class="text" id="mobil" required>
+                    </div>
+                </div><br>
+    
+                <h5>Leveransinformation</h5>
+                <div class="row">
+                    <div class="col">
+                        <label for="namn">Namn*</label><br>
+                        <input type="text" class="text" id="namn" required>
+                    </div>
+                    <div class="col">
+                        <label for="efternamn">Efternamn*</label><br>
+                        <input type="text" class="text" id="efternamn" required><br>
+                    </div>
+                    <div>
+                        <label for="address">Address*</label><br>
+                        <input type="text" class="text" id="address" required>
+                    </div>
+                    <div>
+                        <label for="address2">Address(frivilligt)</label><br>
+                        <input type="text" class="text" id="address2">
+                    </div>
+                    <div class="col">
+                        <label for="postnummer">Postnummer*</label><br>
+                        <input type="text" class="text" id="postnummer" placeholder="123 45" required><br>
+                    </div>
+                    <div class="col">
+                        <label for="stad">Stad*</label><br>
+                        <input type="text" class="text" id="stad" required><br>
+                    </div>
+                </div><br>
+    
+                <h5>Betalningsinformation</h5>
+                <div class="row">
+                    <div>
+                        <label for="kortNamn">Kortinnehavarens namn*</label><br>
+                        <input type="text" class="text" id="kortNamn" required><br>
+                    </div>
+                    <div>
+                        <label for="kortNummer">Kortnummer*</label><br>
+                        <input type="password" class="text" id="kortNummer" required><br>
+                    </div>
+                    <div class="col">
+                        <label for="expirationDate">Utgångsdatum*</label><br>
+                        <input type="text" class="text" id="expirationDate" placeholder="MM/YY" required>
+                    </div>
+                    <div class="col">
+                        <label for="cvc_cvv">CVC / CVV*</label><br>
+                        <input type="text" class="text" id="cvc_cvv" placeholder="123" required><br>
                     </div>
                 </div>
-                <div class="betalning_container betalsningsinfo">
-                    <h5>Betalningsinformation</h5>
-                    <div class="row">
-                        <div>
-                            <label for="kortNamn">Kortinnehavarens namn</label><br>
-                            <input type="text" class="text" id="kortNamn" placeholder=""><br>
-                        </div>
-                        <div>
-                            <label for="kortNummer">Kortnummer</label><br>
-                            <input type="password" class="text" id="kortNummer" placeholder=""><br>
-                        </div>
-                        <div class="col">
-                            <label for="utgångsdatum">Utgångsdatum</label><br>
-                            <input type="text" class="text" id="utgångsdatum" placeholder="MM/YY">
-                        </div>
-                        <div class="col">
-                            <label for="cvc_cvv">CVC / CVV</label><br>
-                            <input type="text" class="text" id="cvc_cvv" placeholder="123"><br>
-                        </div>
-                    </div>
+    
+                <div class="d-grid">
+                    <button class="checkout-buttons" onclick="checkoutBasket()">Beställ nu</button>
                 </div>
-                <div class="betalning_container d-grid">
-                    <button class="checkout-buttons" onclick="checkoutBasket(), location.href='tack.html'">Beställ nu</button>
-                </div>
-                
-            </div>
-
-            <div class="col-1"></div>
-            <div class="betalning_container col-4">
-                Varukorg
-                <table id="checkout"></table>
-            </div>
+            </form>
         </div>
+        <div class="col-1"></div>
+        <div class="col-3">
+            Varukorg
+            <table id="checkout"></table>
+        </div>
+        <div class="col-1"></div>
     </div>
+
 
     <script src="shopping.js"></script>
     <script>
         fetch("data.json")
+
+        //Hämta värden från input
+        // var email = document.getElementById("e-post").value;
+        // var mobil = document.getElementById("mobil").value;
+        // var namn = document.getElementById("namn").value;
+        // var efternamn = document.getElementById("efternamn").value;
+        // var address = document.getElementById("address").value;
+        // var postnummer = document.getElementById("postnummer").value;
+        // var stad = document.getElementById("stad").value;
+        // var kortNamn = document.getElementById("kortNamn").value;
+        // var kortNummer = document.getElementById("kortNummer").value;
+        // var expirationDate = document.getElementById("expirationDate").value;
+        // var cvcCvv = document.getElementById("cvc_cvv").value;
+        
+        // if (email === "" || mobil === "" || namn === "" || efternamn === "" || address === "" || postnummer === "" || 
+        // stad === "" || kortNamn === "" || kortNummer === "" || expirationDate === "" || cvcCvv === "") {
+        // alert("Du måste fylla i alla uppgifter");
+        // }
+
     </script>
 
 </body>
