@@ -1,14 +1,17 @@
 body {
   font-family: "Roboto Slab", serif;
 }
+
 ul li {
   padding-left: 20px;
   padding-right: 20px;
 }
+
 .d-flex {
   padding-left: 30px;
   padding-right: 30px;
 }
+
 .search {
   border: 1px solid black;
   border-radius: 8px;
@@ -22,6 +25,7 @@ ul li {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
+
 .search input {
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -35,6 +39,7 @@ ul li {
   -ms-flex: 1;
   flex: 1;
 }
+
 .search button {
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -54,9 +59,11 @@ ul li {
   right: 20px;
   height: 25px;
 }
+
 .kassa {
   display: flex;
 }
+
 .cart {
   padding: 0.5em;
 }
@@ -66,12 +73,18 @@ h1 {
   text-align: center;
   padding-bottom: 20px;
 }
+
 .herrbild {
   text-align: center;
   background-color: #f1f1f1;
   margin: 30px;
   padding: 20px;
 }
+
+.herrbild img {
+  width: 100%;
+}
+
 @media only screen and (max-width: 764px) {
   .herrbild {
     max-width: 100%;
@@ -80,6 +93,7 @@ h1 {
     width: 100%;
   }
 }
+
 @media only screen and (max-width: 764px) {
   .herrbild {
     max-width: 100%;
@@ -88,6 +102,7 @@ h1 {
     width: 100%;
   }
 }
+
 @media only screen and (max-width: 1200px) {
   .herrbild {
     max-width: 100%;
@@ -96,6 +111,7 @@ h1 {
     width: 100%;
   }
 }
+
 .cards-list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -106,14 +122,17 @@ h1 {
   margin: auto;
   padding: 10px;
 }
+
 .card {
   margin: auto;
 }
+
 .btn {
   background-color: black;
   color: white;
   font-size: 15px;
 }
+
 .btn:hover {
   border: 1px solid black;
   color: black;
@@ -121,12 +140,7 @@ h1 {
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
-/* .main {
-  max-width: 40.5rem;
-  max-height: fit-content;
-  margin: auto;
-  padding: 2rem 1.25rem;
-} */
+
 .title h3 {
   font-size: medium;
   padding: 10px 10px;
@@ -146,6 +160,7 @@ h5,
   line-height: 1.5;
   font-weight: 400;
 }
+
 .img,
 .blog-img,
 .user-img {
@@ -153,40 +168,49 @@ h5,
   background-repeat: no-repeat;
   background-position: center center;
 }
+
 /*# sourceMappingURL=mysass.css.map */
 
 /* ----------------- Produktsida --------------*/
 .productName {
   font-weight: 500;
 }
+
 .productInfo {
   font-size: small;
 }
+
 .productPrice {
   font-weight: 200;
 }
+
 .productText {
   font-family: "Open Sans", sans-serif;
   border-top: 1px solid black;
   max-width: 3000px;
   margin-bottom: 10px;
 }
+
 .productPicBig {
   width: 400px;
   height: 400px;
   display: flex-end;
   float: right;
 }
+
 .productPicSmall {
   width: 400px;
   height: 400px;
 }
+
 .productPageBig {
   max-width: 80%;
 }
+
 .produtPageSmall {
   max-width: 90;
 }
+
 @media only screen and (min-width: 1280px) {
   .containerProd {
     border: rgb(163, 163, 163) solid 1px;
@@ -194,11 +218,13 @@ h5,
     margin-right: 180px;
   }
 }
+
 @media only screen and (max-width: 1279px) {
   .containerProd {
     border: rgb(100, 100, 100) solid 1px;
   }
 }
+
 .select {
   display: block;
   pad: 10px;
@@ -209,8 +235,8 @@ h5,
 /* Siffran på antalet produkter i varukorgen */
 .items-in-basket {
   position: absolute;
-  margin-left: 10px;
-  margin-top: 12px;
+  margin-left: 20px;
+  margin-top: 20px;
   text-align: center;
   font-size: 10px;
   width: 14px;
@@ -222,6 +248,7 @@ h5,
 
 .fa-shopping-cart {
   color: black;
+  padding: 10px;
 }
 
 #checkout img {
@@ -354,18 +381,16 @@ h5,
   justify-content: center;
   display: grid;
 }
+
 .form-control {
   max-width: 450px;
   max-height: 450px;
 }
-/* @media only screen and (max-width: 764px) {
-   .form-control{
-     max-width: 100px;
-   }
- } */
+
 .contactText {
   justify-content: center;
 }
+
 .textarea {
   max-width: 100px;
 }
@@ -375,7 +400,6 @@ h5,
   justify-content: center;
   display: grid;
 }
-/* ------ MIKAEL NY KOD OVAN ------- */
 
 /* ------ Tack och betalningssidan ------ */
 .text {
@@ -440,9 +464,14 @@ h5,
 }
 
 /* Footer */
+.backgroundc {
+  background-color: black;
+  padding-bottom: 30px;
+  padding-top: 1px;
+}
+
 footer .container {
   font-family: "Roboto Slab", serif;
-  background-color: black;
   margin-top: 50px;
 }
 
@@ -496,4 +525,8 @@ footer .container {
 .fmid p {
   font-size: 10px;
   font-weight: 100;
+}
+
+section img {
+  width: 100%;
 }
